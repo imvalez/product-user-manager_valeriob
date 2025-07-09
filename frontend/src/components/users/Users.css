@@ -1,0 +1,113 @@
+.user-list-container {
+    margin-bottom: 2rem;
+  }
+  
+  .user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .user-list-header-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .user-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    align-items: center;
+  }
+  
+  .user-item:last-child {
+    border-bottom: none;
+  }
+  
+  .col-username {
+    font-weight: 500;
+  }
+  
+  .col-role {
+    text-align: center;
+  }
+  
+  .col-status {
+    text-align: center;
+  }
+  
+  .col-status.active {
+    color: #28a745;
+  }
+  
+  .col-status.inactive {
+    color: #dc3545;
+  }
+  
+  .col-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .user-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40;
+  }
+  
+  .user-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }

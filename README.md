@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Gestionale Prodotti - Progettone Finale React (Valerio Bottari)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Questo progetto è una web app completa per la gestione di prodotti e utenti, con autenticazione sicura (inclusa autenticazione a due fattori), ruoli amministrativi e interfaccia moderna.  
+Il backend è realizzato in Node.js/Express con MongoDB, mentre il frontend è sviluppato in React.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Funzionalità principali
 
-### `npm start`
+- **Gestione prodotti:** crea, modifica, attiva/disattiva prodotti.
+- **Gestione utenti (solo admin):** crea, modifica, attiva/disattiva utenti e ruoli.
+- **Autenticazione sicura:** login, registrazione, autenticazione a due fattori (2FA) con app Authenticator e codici di backup.
+- **Ruoli:** utente normale e amministratore.
+- **Interfaccia responsive** e user-friendly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Struttura del progetto
 
-### `npm test`
+```
+progettone_finale_react_valerio_bottari/
+│
+├── backend/                # Backend Node.js/Express
+│   ├── config/             # Configurazioni (db, auth)
+│   ├── controllers/        # Controller API
+│   ├── middlewares/        # Middleware (auth, admin)
+│   ├── models/             # Modelli Mongoose (User, Product)
+│   ├── routes/             # API routes (auth, products, users)
+│   ├── package.json        # Dipendenze backend
+│   └── server.js           # Entry point backend
+│
+├── frontend/               # Frontend React
+│   ├── public/             # Static files (index.html, favicon)
+│   ├── src/                # Sorgente React
+│   │   ├── components/     # Componenti riutilizzabili
+│   │   ├── context/        # Context API (Auth)
+│   │   ├── pages/          # Pagine principali
+│   │   ├── utils/          # Utility (API, auth)
+│   │   ├── App.js          # Entry point React
+│   │   └── index.js        # Bootstrap React
+│   ├── package.json        # Dipendenze frontend
+│   └── ...
+│
+├── .gitignore
+├── README.md
+└── ...
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Requisiti
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (>= 16)
+- MongoDB (in locale o in cloud)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Come avviare il progetto
 
-### `npm run eject`
+### 1. Avvia il backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+cd backend
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Il backend partirà su `http://localhost:5000` e si collegherà a MongoDB su `mongodb://localhost:27017/progettone_finale_react` (modifica in `backend/config/db.js` se necessario).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Avvia il frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Apri un nuovo terminale:
 
-## Learn More
+```sh
+cd frontend
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Il frontend sarà disponibile su `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Per la 2FA, usa un'app come Google Authenticator o Authy per scansionare il QR code.
+- L'utente admin può gestire tutti gli utenti e prodotti.
+- Le variabili di configurazione sensibili (es. JWT_SECRET) sono in `backend/config/auth.js` (per produzione, usa variabili d'ambiente!).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Autore
 
-### Making a Progressive Web App
+Valerio Bottari
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
