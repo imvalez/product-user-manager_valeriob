@@ -1,10 +1,10 @@
 # 🛍️ Gestionale Prodotti - Progettone Finale React (Valerio Bottari)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/valeriobottari/progettone_finale_react_valerio_bottari)
-![GitHub last commit](https://img.shields.io/github/last-commit/valeriobottari/progettone_finale_react_valerio_bottari)
-![GitHub issues](https://img.shields.io/github/issues/valeriobottari/progettone_finale_react_valerio_bottari)
-![GitHub stars](https://img.shields.io/github/stars/valeriobottari/progettone_finale_react_valerio_bottari?style=social)
-![License](https://img.shields.io/github/license/valeriobottari/progettone_finale_react_valerio_bottari)
+![GitHub repo size](https://img.shields.io/github/repo-size/valeriobottari/product-user-manager_valeriob)
+![GitHub last commit](https://img.shields.io/github/last-commit/valeriobottari/product-user-manager_valeriob)
+![GitHub issues](https://img.shields.io/github/issues/valeriobottari/product-user-manager_valeriob)
+![GitHub stars](https://img.shields.io/github/stars/valeriobottari/product-user-manager_valeriob?style=social)
+![License](https://img.shields.io/github/license/valeriobottari/product-user-manager_valeriob)
 
 ---
 
