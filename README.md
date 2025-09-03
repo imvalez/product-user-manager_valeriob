@@ -1,21 +1,36 @@
-# Gestionale Prodotti - Progettone Finale React (Valerio Bottari)
+# 🛍️ Gestionale Prodotti - Progettone Finale React (Valerio Bottari)
 
-Questo progetto è una web app completa per la gestione di prodotti e utenti, con autenticazione sicura (inclusa autenticazione a due fattori), ruoli amministrativi e interfaccia moderna.  
-Il backend è realizzato in Node.js/Express con MongoDB, mentre il frontend è sviluppato in React.
-
----
-
-## Funzionalità principali
-
-- **Gestione prodotti:** crea, modifica, attiva/disattiva prodotti.
-- **Gestione utenti (solo admin):** crea, modifica, attiva/disattiva utenti e ruoli.
-- **Autenticazione sicura:** login, registrazione, autenticazione a due fattori (2FA) con app Authenticator e codici di backup.
-- **Ruoli:** utente normale e amministratore.
-- **Interfaccia responsive** e user-friendly.
+![GitHub repo size](https://img.shields.io/github/repo-size/valeriobottari/progettone_finale_react_valerio_bottari)
+![GitHub last commit](https://img.shields.io/github/last-commit/valeriobottari/progettone_finale_react_valerio_bottari)
+![GitHub issues](https://img.shields.io/github/issues/valeriobottari/progettone_finale_react_valerio_bottari)
+![GitHub stars](https://img.shields.io/github/stars/valeriobottari/progettone_finale_react_valerio_bottari?style=social)
+![License](https://img.shields.io/github/license/valeriobottari/progettone_finale_react_valerio_bottari)
 
 ---
 
-## Struttura del progetto
+## 📖 Descrizione
+
+Questo progetto è una **web app completa** per la gestione di prodotti e utenti, con:
+- autenticazione sicura (inclusa **autenticazione a due fattori - 2FA**),
+- gestione ruoli (**utente** e **amministratore**),
+- interfaccia moderna e **responsive**.
+
+🔹 **Backend:** Node.js / Express + MongoDB  
+🔹 **Frontend:** React
+
+---
+
+## ✨ Funzionalità principali
+
+- **Gestione prodotti:** crea, modifica, attiva/disattiva prodotti.  
+- **Gestione utenti (solo admin):** crea, modifica, attiva/disattiva utenti e ruoli.  
+- **Autenticazione sicura:** login, registrazione, 2FA tramite app Authenticator e codici di backup.  
+- **Ruoli:** utente normale e amministratore.  
+- **UI moderna e responsive.**  
+
+---
+
+## 📂 Struttura del progetto
 
 ```
 progettone_finale_react_valerio_bottari/
@@ -48,49 +63,49 @@ progettone_finale_react_valerio_bottari/
 
 ---
 
-## Requisiti
+## ⚙️ Requisiti
 
 - Node.js (>= 16)
-- MongoDB (in locale o in cloud)
+- MongoDB (locale o in cloud)
 
 ---
 
-## Come avviare il progetto
+## 🚀 Avvio del progetto
 
-### 1. Avvia il backend
-
+### 1️⃣ Avviare il backend
 ```sh
 cd backend
 npm install
 npm start
 ```
+👉 Il backend parte su `http://localhost:5000`  
+👉 Database predefinito: `mongodb://localhost:27017/progettone_finale_react`  
+(Modifica `backend/config/db.js` se necessario)
 
-Il backend partirà su `http://localhost:5000` e si collegherà a MongoDB su `mongodb://localhost:27017/progettone_finale_react` (modifica in `backend/config/db.js` se necessario).
-
-### 2. Avvia il frontend
-
-Apri un nuovo terminale:
-
+### 2️⃣ Avviare il frontend
+In un nuovo terminale:
 ```sh
 cd frontend
 npm install
 npm start
 ```
-
-Il frontend sarà disponibile su `http://localhost:3000`.
-
----
-
-## Note
-
-- Per la 2FA, usa un'app come Google Authenticator o Authy per scansionare il QR code.
-- L'utente admin può gestire tutti gli utenti e prodotti.
-- Le variabili di configurazione sensibili (es. JWT_SECRET) sono in `backend/config/auth.js` (per produzione, usa variabili d'ambiente!).
+👉 Il frontend sarà disponibile su `http://localhost:3000`
 
 ---
 
-## Autore
+## 🔐 Note
 
-Valerio Bottari
+- Per la 2FA, usa un'app come **Google Authenticator** o **Authy** per scansionare il QR code.  
+- L’utente admin può gestire tutti gli utenti e prodotti.  
+- Le variabili di configurazione sensibili (es. `JWT_SECRET`) si trovano in `backend/config/auth.js`.  
+  👉 In produzione, **usa variabili d’ambiente**!  
+
+---
+
+## 👨‍💻 Autore
+
+**Valerio Bottari**
+
+📧 Contatti: [LinkedIn](https://www.linkedin.com/in/valeriobottari/) | [GitHub](https://github.com/imvalez)
 
 ---
