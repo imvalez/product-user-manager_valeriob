@@ -1,4 +1,4 @@
-# 🛍️ Gestionale Prodotti - Progettone Finale React (Valerio Bottari)
+# 🛍️ Gestionale Prodotti - product-user-manager_valeriob
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/valeriobottari/product-user-manager_valeriob)
 ![GitHub last commit](https://img.shields.io/github/last-commit/valeriobottari/product-user-manager_valeriob)
